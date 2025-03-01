@@ -3,13 +3,23 @@ Salesforce project demonstrating automation, approval processes, and integration
 
 **Paid Leave Request Program (State-Level Implementation)**
 
-Overview
+**Overview**
 
-**This project is a Salesforce-based Paid Leave Request Program implemented for a state in the U.S. 
-The solution automates the submission, review, approval, and tracking of paid leave requests for qualified residents. 
-The implementation leverages Salesforce Flows, Approval Processes, Reports & Dashboards, and MuleSoft integration for external data intake.**
+This project is a Salesforce-based Paid Leave Request Program implemented for a state in the U.S. The solution automates the submission, review, approval, and tracking of paid leave requests for qualified residents. The implementation leverages Salesforce Flows, Approval Processes, Reports & Dashboards, and MuleSoft integration for external data intake.
 
-Objectives
+**About the Paid Leave Program**
+
+The Paid Leave Request Program provides eligible residents with financial support and job protection when they need to take time off due to serious health conditions, caring for a family member, or bonding with a new child. The program covers:
+
+Family Leave: Bonding with a newborn, adoption, or caring for a family member with a medical condition.
+
+Medical Leave: When an individual is unable to work due to their own medical condition.
+
+Other Qualifying Leave: Includes personal safety leave and leave for military-related family support.
+
+Under this program, residents can apply for up to 12 weeks of family leave and 12 weeks of medical leave, with a combined maximum of 20 weeks per year. The state administers benefit payments, ensuring timely support for residents during their leave period.
+
+**Objectives**
 
 Streamline Leave Request Submission: Ensure smooth intake from the state’s website via MuleSoft integration.
 
@@ -21,11 +31,11 @@ Enhance User Experience: Provide a well-structured Salesforce UI, highlight pane
 
 Enable Real-Time Reporting: Develop reports and dashboards for tracking program performance and payouts.
 
-Technical Implementation
+**Technical Implementation**
 
 **1. Custom Objects & Data Model**
 
-**Paid Leave Request (Main Object)**
+Paid Leave Request (Main Object)
 
 Fields:
 
@@ -43,13 +53,13 @@ Weekly Pay Rate (Currency) + Calculated Payout (Formula)
 
 Application Status (Picklist: Submitted, Under Review, Approved, Rejected, Withdrawn)
 
-**Leave Approval History (Tracks Approval Stages)- Object**
+**Leave Approval History (Tracks Approval Stages)-Object**
 
 Master-Detail to Paid Leave Request
 
 Fields: Approver (User Lookup), Approval Status, Date, Comments
 
-**Paid Leave Entitlement (Tracks Leave Balance) - Object**
+**Paid Leave Entitlement (Tracks Leave Balance)-Object**
 
 Fields: Total Leave Entitlement, Leave Taken, Remaining Balance (Formula)
 
@@ -137,14 +147,9 @@ Gauge: Approval Time Performance
 
 Table: High-Value Payout Requests
 
-
 **Key Takeaways**
 
-✅ Efficient automation using Salesforce Flows & Approval Processes.
-✅ Seamless integration with external websites via MuleSoft.
-✅ User-friendly design with organized Lightning UI, Quick Actions, and Reports.
-✅ Secure & Compliant with Field-Level Security, SSN Encryption, and Validation Rule.
-✅ Real-time analytics via Reports & Dashboards to monitor program impact
+✅ Efficient automation using Salesforce Flows & Approval Processes.✅ Seamless integration with external websites via MuleSoft.✅ User-friendly design with organized Lightning UI, Quick Actions, and Reports.✅ Secure & Compliant with Field-Level Security, SSN Encryption, and Validation Rules.✅ Real-time analytics via Reports & Dashboards to monitor program impact.
 
 **Next Steps**
 
